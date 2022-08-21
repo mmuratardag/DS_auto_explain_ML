@@ -1,23 +1,28 @@
 # Auto-ML -- Explainable ML
 
-Some business problems require auto-ML (which might be particularly relevant for production); some businesses prefer explainable-ML. This choice is all about the business models, goals, and strategies.
+Two different modeling approaches coexist. ***Explanatory*** models are for making inferences; ***predictive*** models are for computing the value of a new or future observation when we actually did not observe the value yet.
 
-This repo includes the application of auto-ML within the multi-platform H2O framework.
+Understanding the intended purpose of modeling is important. Data science is not only about "how to build models". "Why we build models," and "what actions/decisions should model outcomes lead to" are  crucial parts of data science use cases.
 
-Below is the variable importance of the auto-ML outcome.
+Some business problems require auto-ML, which might be particularly relevant for a good prediction as well as production. Some businesses prefer explainable-ML or explanatory models. It is all about the goals, and strategies.
 
-![auo-ML](plots/00.png)
+This repo includes the application of auto-ML within the multi-platform H2O framework and DALEX.
 
-In another step, I replicate the auto-ML's model and use an explainable-ML framework to investigate to what extent auto-ML and explainable-ML are compatible.
+Since there is increasing demand for predictive models and explainable ML, this exercise demonstrates the importance of understanding what is happening under the hood and why.
 
-![auo-ML](plots/explain_ml_index.png)
 
-The interactive .html for the explainable-ML is [here](mmuratardag.github.io/static/explain_ml_index.html).
+![](plots/r_ModelCorr.png)
 
-In this particular regression problem, the outcomes are only somewhat similar, which is probably an artifact of
-(1) having to switch from GBM to XGBoost (an incompatibility issue of a particular R library within the tidymodels ecosystem)
-(2) cross-platform differences
+![](plots/r_varimp_gbm.png)
 
-This exercise demonstrates the importance of understanding what is happening under the hood and why.
+![](plots/r_varimp_xgb.png)
 
-Data science is not only about "how to build models"; "why we build models," and "what actions/decisions should model outcomes lead to" are also crucial parts of data science applications.
+![](plots/r_shap_gbm_xgb.png)
+
+![](plots/r_ice_gbm_xgb_ins_bal.png)
+
+
+
+### TO-DO
+DALEX stuff is coming soon
+
