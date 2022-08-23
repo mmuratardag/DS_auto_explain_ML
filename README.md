@@ -24,5 +24,5 @@ Since there is increasing demand for predictive models and explainable ML, this 
 
 
 ### TO-DO
-DALEX stuff is coming soon
+more DALEX stuff is coming soon
 
