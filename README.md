@@ -21,8 +21,3 @@ Since there is increasing demand for predictive models and explainable ML, this 
 
 ![](plots/r_ice_gbm_xgb_ins_bal.png)
 
-
-
-### TO-DO
-more DALEX stuff is coming soon
-
